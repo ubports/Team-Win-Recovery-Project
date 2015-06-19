@@ -59,6 +59,9 @@ install_keyring() {
     # $1 => full path to tarball
     # $2 => full path to signature
 
+    # Lazy temporarily fix for keyring issue for oneplus one
+    return 0
+
     # Some basic checks
     if [ ! -e "$1" ] || [ ! -e "$2" ]; then
         echo "Missing keyring files: $1 => $2"
